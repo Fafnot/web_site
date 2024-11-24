@@ -1,17 +1,17 @@
 * { 
    margin: 0px;
+   padding: 0px;
 }
 
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #49777B; 
-  background-size: 1920px;
+  background-color: #49777B;
 }
+
 
 .main {
   display: block;
   text-align: center;
+  margin: auto;
 }
 
 
@@ -19,7 +19,9 @@ body {
 
 .top_main {
   height: 70px;
-  width: 100%;
+  width: 1900px;
+  text-align: center;
+  display: inline-block;
   background-color: #D4800C;
 }
 
@@ -36,7 +38,7 @@ body {
 .conteiner_center {
   display: inline-block;
   width: 1300px;
-  height: 2000px;
+  height: 20000px;
   background-color: #D2C8AA;
   opacity: 0.8;
 }
@@ -54,6 +56,54 @@ body {
   background-color: #F67103;
   border-radius: 20px;
 }
+
+@media (max-width: 1200px) {
+  .main {
+    width: 1000px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 1000px;
+  }
+  .top_main {
+    width: 1000px;
+  }
+  .conteiner_center {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 768px;
+  }
+  .top_main {
+    width: 768px;
+  }
+  .conteiner_center{
+    width: 500px;
+  }
+}
+
+@media (max-width: 480px){ 
+  .main {
+    width: 480px;
+  }
+  .top_main {
+    width: 480px;
+  }
+  .conteiner_center {
+    width: 300px;
+  }
+}
+
+
+
+
+
 
 
 
