@@ -14,13 +14,12 @@ body {
   text-align: center;
 }
 
-.conteiner_centerimg {
-  width: 1920;
-}
+
 
 
 .top_main {
   height: 70px;
+  width: 100%;
   background-color: #D4800C;
 }
 
@@ -31,6 +30,7 @@ body {
   padding-top: 20px;
   background-color: black;
   height: 60px;
+  width: 100%;
 }
 
 .conteiner_center {
