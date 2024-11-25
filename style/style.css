@@ -56,8 +56,18 @@ h3 {
 
 @media (max-width: 1000px) {
   .after {
-    text-align: center;
     font-size: 10px;
+    padding-top: 30px;
+  }
+  .conteiner_news {
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
   }
 }
  
