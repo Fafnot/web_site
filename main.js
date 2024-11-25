@@ -1,12 +1,3 @@
-function news(){
-  
-}
-
-
-
-
-
-
 
 
 
