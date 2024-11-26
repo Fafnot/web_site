@@ -19,6 +19,10 @@
   display: none;
 }
 
+.home-page {
+  text-decoration: none;
+}
+
 
 
 
@@ -54,6 +58,13 @@
   }
 }
 
+@media (max-width: 400px) {
+  .nav-btn {
+    font-size: 1em;
+    padding-inline: 5px;
+    padding-bottom: 1px;
+  }
+}
 
 
 

@@ -56,8 +56,9 @@ h3 {
 
 @media (max-width: 1000px) {
   .after {
-    font-size: 10px;
-    padding-top: 30px;
+    font-size: 6px;
+    padding-top: 5px;
+    height: 20px;
   }
   .conteiner_news {
     margin-top: 25px;
@@ -71,7 +72,38 @@ h3 {
   }
 }
  
+@media (max-widt: 400px) {
+  .conteiner_center {
+    width: 100%;
+  }
+  .conteiner_news {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 5px;
+  }
+  
+}
 
+@media (max-width: 200px){
+  .conteiner_center{
+    width: 100%;
+  }
+  .conteiner_news{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    font-size: 7px;
+  }
+}
 
 
 
