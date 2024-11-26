@@ -21,6 +21,10 @@
 
 .home-page {
   text-decoration: none;
+  font-size: 40px;
+}
+.home-page a:hover {
+  background-color: #D2C8AA;
 }
 
 
@@ -28,6 +32,14 @@
 
 
 @media (max-width: 1000px) {
+  input {
+    font-size: 20px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    display: block;
+  }
+
   .nav-btn {
     font-size: 2em;
     padding-inline: 10px;
@@ -56,13 +68,28 @@
   .top_main {
     justify-content: space-between;
   }
+
+  input {
+    border-radius: 20px;
+    border: none;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 200px) {
   .nav-btn {
     font-size: 1em;
     padding-inline: 5px;
     padding-bottom: 1px;
+  }
+  input {
+    width: 50px;
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+  }
+  .home-page {
+    font-size: 1em;
   }
 }
 
