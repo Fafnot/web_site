@@ -1,6 +1,7 @@
 .top_main {
   display: flex;
   background-color: #49777B;
+  justify-content: space-between;
 }
 .nav_name_bar {
   display: flex;
@@ -10,10 +11,14 @@
   padding: 1em;
   text-decoration: none;
   color: black;
+  background-color: #49777B;
+  transition: all .2s ease;
 }
 
 .nav_name_bar a:hover{
   background-color: #D2C8AA;
+  transform: scale(1);
+  opacity: 0.5;
 }
 
 
@@ -21,14 +26,31 @@
 .home-page {
   text-decoration: none;
   font-size: 40px;
+  transition: all .2s ease;
 }
-.home-page a:hover {
+.home-page:hover {
   background-color: #D2C8AA;
+  transform: scale(1);
 }
 
 .nav-btn {
   display: none;
 }
+
+input {
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
+  height: 40px;
+}
+.top_main input {
+  text-align: center;
+}
+
+
+
 
 
 
@@ -53,6 +75,9 @@
     background-color: #49777B;
     cursor: pointer;
     display: block;
+  }
+  .nav-btn:hover {
+    background-color: #D2C8AA;
   }
 
 
