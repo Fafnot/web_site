@@ -12,10 +12,11 @@
   color: black;
 }
 
-
-.nav-btn {
-  display: none;
+.nav_name_bar a:hover{
+  background-color: #D2C8AA;
 }
+
+
 
 .home-page {
   text-decoration: none;
@@ -25,10 +26,14 @@
   background-color: #D2C8AA;
 }
 
+.nav-btn {
+  display: none;
+}
 
 
 
 
+/* adoptive under phone and tablet*/
 @media (max-width: 1000px) {
   input {
     font-size: 20px;
@@ -36,6 +41,8 @@
     width: 200px;
     height: 30px;
     display: block;
+    border-radius: 20px;
+    border: none;
   }
 
   .nav-btn {
@@ -63,10 +70,7 @@
     justify-content: space-between;
   }
 
-  input {
-    border-radius: 20px;
-    border: none;
-  }
+  
 }
 
 @media (max-width: 200px) {
