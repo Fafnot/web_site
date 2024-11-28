@@ -1,0 +1,60 @@
+.top_main {
+  display: flex;
+  background-color: #49777B;
+  justify-content: space-between;
+}
+.nav_name_bar {
+  display: flex;
+}
+.nav_name_bar a{
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+  background-color: #49777B;
+  transition: all .2s ease;
+}
+
+.nav_name_bar a:hover{
+  background-color: #D2C8AA;
+  opacity: 0.5;
+}
+
+
+
+.home-page {
+  display: block;
+  text-decoration: none;
+  font-size: 35px;
+  transition: all .2s ease;
+}
+.home-page:hover {
+  background-color: #D2C8AA;
+  transform: scale(1);
+}
+
+.nav-btn {
+  display: none;
+}
+
+input {
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 340px;
+  height: 40px;
+  padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

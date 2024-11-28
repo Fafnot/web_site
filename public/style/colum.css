@@ -1,0 +1,28 @@
+.main-news {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1);
+}
+
+.left-bar {
+  grid-column: 1/3;
+}
+
+.conteiner_center {
+  grid-column: 3/11;
+  display: inline-block;
+  width: 1300px;
+  height: 2000px;
+  background-color: #D2C8AA;
+}
+
+.right-bar {
+  grid-column: 11/13;
+}
+
+
+
+
+
+
+
