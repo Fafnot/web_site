@@ -4,7 +4,10 @@
 }
 
 body {
-  background-color: black;
+  background-image: url(img/background_web_site.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1920px;
 }
 
 
@@ -13,7 +16,7 @@ body {
 
 .main {
   display: grid;
-  text-align: center;
+  text-align: center; 
 }
 
 
@@ -42,7 +45,7 @@ body {
 } 
 
 .conteiner_news img{
-  float: right;
+  float: left;
   margin-right: 10px;
   width: 150px;
   height: 100px;
@@ -62,6 +65,8 @@ body {
 .conteiner_news p {
   font-size: 20px;
 }
+
+
 
 
 
