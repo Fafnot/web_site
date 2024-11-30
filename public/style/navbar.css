@@ -2,6 +2,8 @@
   display: flex;
   background-color: #49777B;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 .nav_name_bar {
   display: flex;
