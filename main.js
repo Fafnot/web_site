@@ -5,18 +5,17 @@ function inputButton(set){
 }
 
 
-function filterNews(category) {
-  const newsItems = document.querySelectorAll('.news-item');
-  newsItems.forEach(item => {
-    if (category === 'all' || item.classList.contains(category)){
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
-    }
-  })
+function filterCards(category) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
 }
-filterNews('all')
-
+filterCards('all')
 
 
 

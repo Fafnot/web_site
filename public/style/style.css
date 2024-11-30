@@ -31,8 +31,6 @@ body {
 
 
 .conteiner_news {
-  display: none;
-  overflow: hidden;
   color: black;
   margin-top: 50px;
   margin-left: 50px;
@@ -68,6 +66,9 @@ body {
 
 
 
+.card {
+  display: none;
+}
 
 .active {
   display: block;

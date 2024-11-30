@@ -35,9 +35,13 @@
       <div class="left-bar">
         <div class="category">
           <h2>category</h2>
-          <button onclick="filterNews('all')">Все</button>
-          <button onclick="filterNews('sport')"> Спорт</button>
-          <button onclick="filterNews('tech')">технология</button>
+          <button onclick="filterCards('all')">Все</button>
+          <br>
+          <button onclick="filterCards('sport')"> Спорт</button>
+          <br>
+          <button onclick="filterCards('tech')">технология</button>
+          <br>
+          <button onclick="filterCards('game')"> Game</button>
         </div>
   
       </div>
@@ -48,20 +52,27 @@
           <h2>author: NONNSWEETY</h2>
         </div>
   
-        <div class="conteiner_news">
-        <a href="news/game/wharhammer.html"><h3 id="news-id">"Война только началась": Новый ролик Warhammer 40,000: Space Marine 2 посвятили предстоящим контентным обновлениям</h3></a>
-          <a href="news/game/wharhammer.html"><img src="news/game/warhammer.webp" alt="warhammer" style="width: 400px;"></a>  
+        <div class="card game">
+          <div class="conteiner_news">
+          <a href="news/game/wharhammer.html"><h3 id="news-id">"Война только началась": Новый ролик Warhammer 40,000: Space Marine 2 посвятили предстоящим контентным обновлениям</h3></a>
+            <a href="news/game/wharhammer.html"><img src="news/game/warhammer.webp" alt="warhammer" style="width: 400px;"></a>  
+          </div>
         </div>
-        <div class="conteiner_news">
 
-          <a href="news/other/cisco_news.html"><h3>IntelBroker вновь шалит с подельниками: взлом Cisco</h3></a>
+        <div class="card tech">
+          <div class="conteiner_news">
+  
+            <a href="news/other/cisco_news.html"><h3>IntelBroker вновь шалит с подельниками: взлом Cisco</h3></a>
+          </div>
         </div>
-          <div class="conteiner_news ">
+
+        <div class="card sport">
+          <div class="conteiner_news">
             <img src="news/sport/futbol/futbol.jpg" alt="">
             <a href="news/sport/futbol/futbol.html"><h3>Футболистка «Зенита»: когда смотрю женскую АПЛ, чувствую себя не до конца реализовавшейся</h3></a>
           </div>
+        </div>
  
-
 
       </div>
   
