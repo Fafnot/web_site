@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="img/ico_html.ico" />
-  <link rel="stylesheet" href="public/style/style.css">
+  <link rel="stylesheet" href="public/style/index_html/index_html.css">
   <link rel="stylesheet" href="public/style/navbar.css">
   <link rel="stylesheet" href="public/style/category.css">
   <link rel="stylesheet" href="public/style/colum.css">
@@ -35,6 +35,9 @@
       <div class="left-bar">
         <div class="category">
           <h2>category</h2>
+          <button onclick="filterNews('all')">Все</button>
+          <button onclick="filterNews('sport')"> Спорт</button>
+          <button onclick="filterNews('tech')">технология</button>
         </div>
   
       </div>
@@ -46,8 +49,20 @@
         </div>
   
         <div class="conteiner_news">
+        <a href="news/game/wharhammer.html"><h3 id="news-id">"Война только началась": Новый ролик Warhammer 40,000: Space Marine 2 посвятили предстоящим контентным обновлениям</h3></a>
+          <a href="news/game/wharhammer.html"><img src="news/game/warhammer.webp" alt="warhammer" style="width: 400px;"></a>  
         </div>
-    
+        <div class="conteiner_news">
+
+          <a href="news/other/cisco_news.html"><h3>IntelBroker вновь шалит с подельниками: взлом Cisco</h3></a>
+        </div>
+          <div class="conteiner_news ">
+            <img src="news/sport/futbol/futbol.jpg" alt="">
+            <a href="news/sport/futbol/futbol.html"><h3>Футболистка «Зенита»: когда смотрю женскую АПЛ, чувствую себя не до конца реализовавшейся</h3></a>
+          </div>
+ 
+
+
       </div>
   
       <div class="right-bar">
