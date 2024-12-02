@@ -3,6 +3,10 @@
    padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url(img/background_web_site.png);
   background-repeat: no-repeat;
@@ -13,11 +17,12 @@ body {
 
 
 
-
 .main {
   display: grid;
-  text-align: center; 
+  text-align: center;
 }
+
+
 
 
 .after {
@@ -41,7 +46,9 @@ body {
   padding-top: 20px;
   background-color: #F67103;
   border-radius: 20px;
-} 
+}
+
+
 
 .conteiner_news img{
   margin-right: 10px;
@@ -62,6 +69,7 @@ body {
 .conteiner_news p {
   font-size: 20px;
 }
+
 
 
 

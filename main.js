@@ -5,6 +5,8 @@ function inputButton(set){
 }
 
 
+
+
 function filterCards(category) {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
