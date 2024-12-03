@@ -22,18 +22,23 @@ function checkForm(element) {
     var name = element.name.value;
     var pass = element.pass.value;
     var return_pass = element.return_pass.value;
+
+    const reg = document.querySelectorAll(".registor");
     
     if (name == "" || pass == "" || return_pass == "") {
         
-        alert("not work")        
+        alert("not work");        
 
     } else {
         for (var i = 0; i < array_user.length; i++){
             if (name == array_user[i] && pass == array_password[i] && return_pass == array_password[i]) {
-                alert("yes")
-                break
+                alert("yes");
+                reg.forEach(button => button.remove());
+                    
+                break;
             } else {
-                alert("no")
+                alert("no");
+                reg.style.display = "block";
             }
         }
     }
