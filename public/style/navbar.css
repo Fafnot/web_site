@@ -22,6 +22,10 @@
   opacity: 0.5;
 }
 
+.left_nav_bar {
+  display: flex;
+}
+
 
 
 .home-page {
@@ -49,6 +53,18 @@ input {
   padding-left: 15px;
 }
 
+.registor {
+  border: 0;
+  background-color: #49777B;
+  color: black;
+  width: 50px;
+  transition: all 1s ease;
+}
+
+.registor:hover {
+  background-color: #D2C8AA;
+  width: 100px;
+}
 
 
 

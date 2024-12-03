@@ -4,9 +4,6 @@ function inputButton(set){
     window.location.href = "admin.html"
 }
 
-
-
-
 function filterCards(category) {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -19,5 +16,9 @@ function filterCards(category) {
 }
 filterCards('all')
 
+
+function registor(){
+    window.location.href = "registor.html"
+}
 
 
