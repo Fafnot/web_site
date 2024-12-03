@@ -12,7 +12,7 @@
   display: block;
   padding: 1em;
   text-decoration: none;
-  color: black;
+  color: white;
   background-color: #49777B;
   transition: all .2s ease;
 }
@@ -56,8 +56,9 @@ input {
 .registor {
   border: 0;
   background-color: #49777B;
-  color: black;
+  color: white;
   width: 50px;
+  margin-left: 10px;
   transition: all 1s ease;
 }
 
