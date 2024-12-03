@@ -43,10 +43,14 @@
         </div>
 
         <div class="conteiner_news">
-          <form >
-            <label for="name">name: </label> 
-            <input type="text" name="name" placeholder="name..." id="name"><br><br>
-            
+          <form id="registor"onsubmit="return checkForm(this)" method="post" style="text-align: center;">
+            <label style="font-size: 40px;">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Name..." style="margin: 0px; width: 900px;" >
+            <label style="font-size: 40px;">Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="Password..." style="margin: 0px; width: 850px;">
+            <label style="font-size: 40px;">Password:</label>
+            <input type="password" name="return_pass" id="return_pass" placeholder="Password..." style="margin: 0px; width: 850px;">
+            <input type="submit" name="submit" value="Done" style="width: 100px; padding: 0px; margin: 0px; margin-top: 30px; margin-right: 930px;">
           </form>
         </div>
   
@@ -68,5 +72,6 @@
 
   </div>
 </body>
+<script src="main.js"></script>
 
 </html>
