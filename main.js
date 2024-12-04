@@ -33,8 +33,8 @@ function checkForm(element) {
         for (var i = 0; i < array_user.length; i++){
             if (name == array_user[i] && pass == array_password[i] && return_pass == array_password[i]) {
                 alert("yes");
-                reg.forEach(button => button.remove());
-                    
+                reg.style.display = "none"              
+
                 break;
             } else {
                 alert("no");
