@@ -1,6 +1,8 @@
 var array_user = ["admin", "user", "other"]
 var array_password = ["admin", "user", "other"]
 
+
+
 function filterCards(category) {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -14,9 +16,12 @@ function filterCards(category) {
 filterCards('all');
 
 
+
 function registor(){
     window.location.href = "registor.html";
 };
+
+
 
 function checkForm(element) {
     var name = element.name.value;
@@ -32,9 +37,8 @@ function checkForm(element) {
     } else {
         for (var i = 0; i < array_user.length; i++){
             if (name == array_user[i] && pass == array_password[i] && return_pass == array_password[i]) {
-                alert("yes");
-                reg.forEach(button => button.style.display = "none");
-
+                const buttons = document.querySelectorAll('.registor');
+                buttons.forEach(button => button.style.display = "none");
                 break;
             } else {
                 alert("no");
@@ -45,4 +49,8 @@ function checkForm(element) {
 
     return false;
 };
+
+
+
+
 
