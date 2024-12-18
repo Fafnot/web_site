@@ -22,20 +22,7 @@
 
 
 
-@media (max-width: 1000px) {
-  .conteiner_center {
-    grid-column: 3/11;
-    width: 600px;
-  }
 
-  .left-bar {
-    grid-column: 1/3;
-  }
-
-  .right-bar{
-    grid-column: 11/13;
-  }
-}
 
 
 

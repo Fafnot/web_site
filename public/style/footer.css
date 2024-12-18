@@ -10,10 +10,9 @@
 .left {
 	grid-column: 1/3;
 }
-.left a {
-  text-decoration: none;
-  color: black;
-}
+
+
+
 .massege {
 	display: inline-block;
 	margin-top: 10px;
@@ -47,8 +46,36 @@
   display: inline-block;
 }
 
+/* animation footer word*/
+.me a{
+	color: black;
+	text-decoration: none;
+	transition: all .4s ease;
+}
+.me a:hover{
+	color: white;
+}
+
+.police a {
+	color: black;
+	text-decoration: none;
+	transition: all .4s ease;
+}
+.police a:hover {
+	color: white;
+}
+
+.setting a{
+	text-decoration: none;
+	color: black;
+	transition: all .4s ease;
+}
+.setting a:hover {
+	color: white;
+}
 
 
+/* right bar footer*/
 .right {
 	grid-column: 11/13;
 }
@@ -60,3 +87,6 @@
   display: inline-block;
   padding-top: 30px;
 }
+
+
+
