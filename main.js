@@ -1,6 +1,12 @@
 var array_user = ["admin", "user", "other"]
 var array_password = ["admin", "user", "other"]
+var search_error = true
 
+function inputButton(el){
+    if (el.value == "#admin"){
+        window.location.href = "admin_window.html"
+    } 
+}
 
 
 function filterCards(category) {
