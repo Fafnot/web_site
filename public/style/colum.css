@@ -44,6 +44,23 @@
   background-color: #49777B;
 }
 
+.support a{
+  color: black;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+.support a:hover {
+  color: white;
+}
+
+.news a {
+  color: black;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+.news a:hover{
+  color: white;
+}
 
 
 
