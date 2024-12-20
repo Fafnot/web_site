@@ -8,22 +8,22 @@
   <link rel="stylesheet" href="../web_site/public/style/navbar.css">
   <link rel="stylesheet" href="../web_site/public/style/category.css">
   <link rel="stylesheet" href="../web_site/public/style/colum.css">
-  <link rel="stylesheet" href="../web_site/public/style/footer.css"> 
+  <link rel="stylesheet" href="../web_site/public/style/footer.css">
+  <link rel="stylesheet" href="../web_site/public/style/registor.css"> 
   <title>December | last day</title>
 
 </head>
 <body>
-  <div class="main" style="height: 800px;">
+  <div class="main" >
     <div class="top_main">
       <a href="index.html" class="home-page">&#127969 </a>
-      <button class="registor" onclick="registor()" id="registor">REGISTOR</button>
+      <button class="registor" onclick="registor()" id="registor">Registor</button>
       <input placeholder="Serch..." oninput="inputButton(this)">
       <div class="drop">
         <button class="nav-btn">&#9776</button>
         <div class="nav_name_bar">
           <a href="web_site.html">О нас</a>
           <a href="price.html"> Прайсы </a>
-          <a href="post.html">Постеры</a>
           <a href="content.html">Контент</a>
           <a href="zwork.html">Работа</a>
         </div>
@@ -39,19 +39,17 @@
   
       <div class="conteiner_center" style="height: 650px;">
   
-        <div class="after">
-          <h2>author: NONNSWEETY</h2>
-        </div>
+
 
         <div class="conteiner_news">
-          <form id="registor"onsubmit="return checkForm(this)" method="post" style="text-align: center;">
-            <label style="font-size: 40px;">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Name..." style="margin: 0px; width: 900px;" >
-            <label style="font-size: 40px;">Password:</label>
-            <input type="password" name="pass" id="pass" placeholder="Password..." style="margin: 0px; width: 850px;">
-            <label style="font-size: 40px;">Password:</label>
-            <input type="password" name="return_pass" id="return_pass" placeholder="Password..." style="margin: 0px; width: 850px;">
-            <input type="submit" name="submit" value="Done" style="width: 100px; padding: 0px; margin: 0px; margin-top: 30px; margin-right: 930px;">
+          <form id="registor"onsubmit="return checkForm(this)" method="post" >
+            <label class="name">Name </label><br>
+            <input type="text" name="name" id="name" placeholder="Name..." class="name_input"><br>
+            <label class="password">Password</label><br>
+            <input type="password" name="pass" id="pass" placeholder="Password..." class="passwordinput"><br>
+            <label class="repeat_password">Repeat Password</label><br>
+            <input type="password" name="return_pass" id="return_pass" placeholder="Repeat password..." class="repeat_password_input" ><br>
+            <input type="submit" name="submit" value="Done" class="done">
           </form>
         </div>
   

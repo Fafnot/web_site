@@ -1,0 +1,47 @@
+.name {
+  font-size: 20px;
+}
+
+.name_input {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.password {
+  margin: 0px;
+  font-size: 20px;
+}
+.passwordinput {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.repeat_password {
+  font-size: 20px;
+}
+
+.repeat_password_input {
+  width: 250px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.done {
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
