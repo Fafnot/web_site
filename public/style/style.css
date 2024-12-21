@@ -8,10 +8,10 @@ html {
 }
 
 body {
-  background-image: url(img/background_web_site.png);
+  background-color: #263238;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  font-family: 'Open+Sans', sans-serif;
 }
 
 
@@ -57,6 +57,10 @@ body {
 .conteiner_news h3 {
   font-size: 30px;
   color: black;
+}
+
+.conteiner_news h4{
+  font-size: 20px;
 }
 
 .conteiner_news p {

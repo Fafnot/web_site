@@ -4,11 +4,14 @@
 }
 
 body {
-  background-image: url(../img/background_web_site.png);
+  background-color: #263238; 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 1920px;
+  font-family: 'Open+Sans', sans-serif;
 }
+
+
 
 
 

@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../web_site/img/ico_html.ico" />
+  <link rel="icon" type="image/x-icon" href="../web_site/img/news_ico.ico" />
   <link rel="stylesheet" href="../web_site/public/style/style.css">
   <link rel="stylesheet" href="../web_site/public/style/navbar.css">
   <link rel="stylesheet" href="../web_site/public/style/category.css">
   <link rel="stylesheet" href="../web_site/public/style/colum.css">
   <link rel="stylesheet" href="../web_site/public/style/footer.css">
   <link rel="stylesheet" href="../web_site/public/style/registor.css"> 
-  <title>December | last day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Новости</title>
 
 </head>
 <body>
   <div class="main" >
     <div class="top_main">
       <a href="index.html" class="home-page">&#127969 </a>
-      <button class="registor" onclick="registor()" id="registor">Регистрация</button>
+      <button class="registor" onclick="registor()" id="registor"><h4>Регистрация</h4></button>
       <input placeholder="Поиск..." oninput="inputButton(this)">
       <div class="drop">
         <button class="nav-btn">&#9776</button>
         <div class="nav_name_bar">
-          <a href="web_site.html">О нас</a>
-          <a href="price.html"> Прайсы </a>
-          <a href="content.html">Контент</a>
-          <a href="zwork.html">Работа</a>
+          <a href="web_site.html"><h4>О нас</h4></a>
+          <a href="price.html">  <h4>Прайсы</h4></a>
+          <a href="contact.html"> <h4>Контакт</h4></a>
+          <a href="work.html"> <h4>Работа</h4></a>
         </div>
       </div>
 
@@ -40,18 +41,19 @@
       <div class="conteiner_center" style="height: 650px;">
   
 
-
-        <div class="conteiner_news">
-          <form id="registor"onsubmit="return checkForm(this)" method="post" >
-            <label class="name">Имя </label><br>
-            <input type="text" name="name" id="name" placeholder="Имя..." class="name_input"><br>
-            <label class="password">Пароль</label><br>
-            <input type="password" name="pass" id="pass" placeholder="Пароль..." class="passwordinput"><br>
-            <label class="repeat_password">Повторите пароль</label><br>
-            <input type="password" name="return_pass" id="return_pass" placeholder="Повторите пароль..." class="repeat_password_input" ><br>
-            <input type="submit" name="submit" value="Done" class="done">
-          </form>
-        </div>
+        <h4>
+          <div class="conteiner_news">
+            <form id="registor"onsubmit="return checkForm(this)" method="post" >
+              <label class="name">Имя </label><br>
+              <input type="text" name="name" id="name" placeholder="Имя..." class="name_input"><br>
+              <label class="password">Пароль</label><br>
+              <input type="password" name="pass" id="pass" placeholder="Пароль..." class="passwordinput"><br>
+              <label class="repeat_password">Повторите пароль</label><br>
+              <input type="password" name="return_pass" id="return_pass" placeholder="Повторите пароль..." class="repeat_password_input" ><br>
+              <input type="submit" name="submit" value="Done" class="done">
+            </form>
+          </div>
+        </h4>
   
         
     
