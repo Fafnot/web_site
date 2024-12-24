@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../../../img/news_ico.ico" />
+  <link rel="stylesheet" href="../../../public/style/style.css">
+  <link rel="stylesheet" href="../../../public/style/navbar.css">
+  <link rel="stylesheet" href="../../../public/style/category.css">
+  <link rel="stylesheet" href="../../../public/style/colum.css">
+  <link rel="stylesheet" href="../../../public/style/footer.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <title>Новости</title>
+
+</head>
+<body>
+  <div class="main">
+    <div class="top_main">
+      <a href="../../../index.html" class="home-page">&#127969</a>
+      <input placeholder="Serch..." oninput="inputButton(this)">
+      <div class="drop">
+        <button class="nav-btn">&#9776</button>
+        <div class="nav_name_bar">
+          <a href="../../../web_site.html"><h4>О нас</h4></a>
+          <a href="../../../price.html">  <h4>Прайсы</h4></a>
+          <a href="../../../contact.html"> <h4>Контакт</h4></a>
+          <a href="../../../work.html"> <h4>Работа</h4></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="main-news">
+
+      <div class="left-bar">
+
+  
+      </div>
+  
+      <div class="conteiner_center">
+  
+ 
+  
+        <div class="conteiner_news">
+          <br>
+          <h3>Состоялся релиз CAD Recode — нейросети для генерации САПР-моделей из облака точек</h3>
+          <br>
+          <p>Исследователи Люксембургского университета представили модель машинного обучения CAD Recode, предназначенную для генерации САПР-моделей из облака точек. Также разработчики интегрировали LLM, с помощью которой можно редактировать геометрию моделей.</p>
+          <br>
+          <img src="../cad_recode/cad_demopg.jpg" alt="#" style="width: 900px; border-radius: 10px;">
+          <br>
+          <p>Модель машинного обучения работает в несколько этапов. Сперва нейросеть переводить облако точек в код на Python, используя библиотеку CadQuery, а после на основе этого создаёт трёхмерную модель. Примечательно, что разработчики интегрировали в проект большую языковую модель на базе Qwen2-1.5B, чтобы полученный код можно было отредактировать. Для обучения модели использовали около миллиона реальных САПР-моделей. </p>
+          <br>
+          <img src="../cad_recode/cad_2.png" alt="#" style="width: 900px; border-radius: 10px; ">
+          <br>
+          <img src="../cad_recode/cad_3.png" alt="#" style="width: 900px; border-radius: 10px; ">
+          <br>
+          <p>Авторы проекта развернули демо проекта. Пользователи могут загрузить меш и на его основе сгенерировать САПР-модель. Например, такой подход можно использовать для реверс-инжиниринга деталей без 3D-сканирования.</p>
+          <br>
+          <img src="../cad_recode/cad_4.png" alt="#" style="width: 900px; border-radius: 10px; " >
+          <br>
+          <img src="../cad_recode/cad_5.png" alt="#" style="width: 900px; border-radius: 10px; ">
+          <br>
+          <p>Код проекта открыт и <a href="https://github.com/filaPro/cad-recode" style="color: blue;" target="_blank">опубликован</a> на GitHub. Помимо этого разработчики поделились текстом исследования. В репозитории представлен простой инференс CAD Recode. Для запуска необходимо установить пакеты из Dockerfile и запустить файл demo.ipynb.</p>
+         
+          
+          
+          
+
+
+
+        </div>
+    
+      </div>
+  
+      <div class="right-bar">
+  
+      </div>
+
+    </div>
+
+   <footer class="footer">
+      <div class="left">
+        <div class="massege">
+          <a href="https://github.com/Fafnot"><img src="../../../img/github.png" alt="github"></a>
+          <a href="https://vk.com/darmenov5"><img src="../../../img/vk.png" alt="vk"></a>
+          <a href="https://www.youtube.com/@nonnsweety4057"><img src="../../../img/youtube.png" alt="youtube"></a>
+          <a href="#"><img src="../../../img/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+
+
+
+      <div class="center">
+        <div class="me">
+          <h4><a href="#">Веб-сайт</a></h4><br>
+          <h4><a href="#">О Проект</a></h4><br>
+          <h4><a href="#">Обо мне</a></h4>
+        </div>
+
+        <div class="police">
+          <h4><a href="#">Правило</a></h4><br>
+          <h4><a href="#">Правило 2</a></h4><br>
+          <h4><a href="#">Возврат вещей</a></h4>
+        </div>
+        <div class="author">
+          <h3>Автор проекта: Arman | nonnsweety | Помощник для риализации: github | Компания было создано: 2024 - 2025 </h3> 
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="setting">
+          <h4><a href="#">Настройки</a></h4><br>
+          <h4><a href="#">Как создавался Веб-сайт</a></h4><br>
+          <h4><a href="#">Аксессуары</a></h4><br>
+          <h4><a href="#">Мой ПК</a></h4>
+        </div>
+      </div>
+    </footer>
+
+    
+
+
+  </div>
+</body>
+<script src="main.js"></script>
+</html>
