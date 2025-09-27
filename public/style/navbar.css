@@ -1,6 +1,6 @@
 .navbar {
     display: block;
-    background-color: aqua;
+    background-color: Black;
     width: 1920px;
     height: 80px;
     margin-bottom: 0px;
@@ -11,6 +11,7 @@
     padding-top: 5px;
     text-align: center;
     font-size: 50px;
+    color: white;
     user-select: none;
 }
 

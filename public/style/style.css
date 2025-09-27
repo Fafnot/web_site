@@ -17,14 +17,14 @@
   display: block;
   margin-top: 0px;
   width: 1920px;
-  height: 620px;
-  background-color: black;
+  height: 700px;
+  background-color: White;
 }
 
 
 
 .footer {
-  background-color: aquamarine;
+  background-color: #DCDCDC;
   height: 210px;
   width: 1920px;
 }

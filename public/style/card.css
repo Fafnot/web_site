@@ -4,8 +4,11 @@
   margin-left: 60px;
   width: 400px;
   height: 500px;
-  background-color: aqua;
+  background-color: #0000CD;
   border-radius: 20px;
+  vertical-align: top;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  user-select: none;
 }
 
 
@@ -20,9 +23,29 @@
     text-align: center;
     margin-left: 30px;
     width: 340px;
+    user-select: none;
 }
 
+.PS4-1 button { 
+    text-align: center;
+    font-size: 40px; 
+    color: white;
+    background-color: #FF4500;
+    border-radius: 20px;
+    border: 2px solid #0000CD; 
+    margin-left: 50px;
+    width: 300px;
+    transition: box-shadow 0.2s ease;
+}
 
+.PS4-1 button:hover{
+    box-shadow: 0 0 0 4px #FF4500;
+}
+
+.PS4-1:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
 
 
 
@@ -42,8 +65,11 @@
   margin-left: 60px;
   width: 400px;
   height: 500px;
-  background-color: aqua;
+  background-color: #0000CD;
   border-radius: 20px;
+  vertical-align: top;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  user-select: none;
 }
 
 .PS4-2 h4 {
@@ -57,7 +83,32 @@
     text-align: center;
     margin-left: 30px;
     width: 340px;
+    user-select: none;
 }
+
+.PS4-2:hover{
+    transform: scale(1.01);
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.3);
+}
+
+
+
+
+.timer {
+    text-align: center;
+    font-size: 40px;
+}
+
+.start_time {
+    width: 100%;
+    background-color: #FFFF00;
+}
+
+
+
+
+
+
 
 
 
