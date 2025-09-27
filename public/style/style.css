@@ -1,0 +1,39 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+.main{
+  display: block;
+}
+
+
+
+.main_card {
+  display: block;
+  margin-top: 0px;
+  width: 1920px;
+  height: 620px;
+  background-color: black;
+}
+
+
+
+.footer {
+  background-color: aquamarine;
+  height: 210px;
+  width: 1920px;
+}
+
+
+
+
+
+
+
+
+

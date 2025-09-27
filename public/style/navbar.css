@@ -1,0 +1,23 @@
+.navbar {
+    display: block;
+    background-color: aqua;
+    width: 1920px;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+
+.navbar_center_text {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 50px;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
