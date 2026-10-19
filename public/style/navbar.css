@@ -1,19 +1,59 @@
 .navbar {
     display: block;
     background-color: Black;
-    width: 1920px;
+    width: 100%;
     height: 80px;
     margin-bottom: 0px;
+ 
+
 }
 
 
 .navbar_center_text {
+    display: inline-flex;
+    padding-left: 540px;
     padding-top: 5px;
-    text-align: center;
     font-size: 50px;
     color: white;
     user-select: none;
 }
+
+
+.nickname {
+    display: inline-flex;
+    color: white;
+    padding-left: 10px;
+    transition: color 0.4s ease;
+}
+
+.nickname a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.nickname a:hover {
+    color: brown    ;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    .navbar_center_text {
+    padding-left: 30px;
+    font-size: 30px;
+    text-align: center;
+  } 
+    .nickname {
+    display: none;
+  }
+}
+
 
 
 

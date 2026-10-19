@@ -1,0 +1,159 @@
+.about {
+    width: 100%;
+    height: 1080px;
+    background-size: cover;
+    background-image: url(../../img/about/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.slider {
+    width: 900px;
+    height: 450px;
+    margin-left: 990px;
+    display: inline-block;
+    overflow: hidden;      /* ✨ обязательно, чтобы углы обрезались */
+    border-radius: 20px;   /* скругляем углы */   
+    position: relative;  
+    margin-top: 40px;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* картинка вписывается без потерь */
+    object-position: center;  /* всегда по центру */
+    display: block;
+    transition: opacity 1s ease;
+}
+
+
+
+
+
+
+.text h2{
+    font-size: 40px;
+    color: black;
+    background-color: #1E90FF;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.right-text {
+    display: block;
+    padding-left: 1100px;
+    font-size: 20px;
+    color: #1E90FF;
+}
+
+.text {
+    color: white;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+
+
+.block-about {
+    text-align: center;
+}
+
+.not-class h2{
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.block-text-about {
+    font-size: 40px;
+    text-align: right;
+    color: #1E90FF;
+}
+
+
+.mini-text {
+    display: inline-block;
+    background-color: #1E90FF;
+    color: black;
+    padding-right: 10px;
+    padding-left: 35px;
+    margin-left: 200px;
+    margin-bottom: 130px;
+}
+
+
+.mini-text  li{
+    width: 700px;
+    font-size: 30px;   
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+
+    .about {
+        height: 700px; 
+    }
+
+    .slider {
+        margin-top: 20px;
+        width: 280px;
+        height: 180px;
+        margin-left: 0px;
+    }
+
+    .slider1 {
+        margin-left: 0px !important;
+        width: 280px !important; 
+        height: 180px;
+        margin-top: 10px;
+    }
+ 
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .right-text {
+        padding-left: 0px;
+        font-size: 10px;
+    }
+
+    .not-class h2{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .block-text-about {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .mini-text {
+        margin-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .mini-text li{
+        width: 200px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
