@@ -1,0 +1,29 @@
+.logo-ps-time-kokshe {
+    text-align: center;
+    background-color: black;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    display: inline-flex;
+    color: white;
+}
+
+.logo span {
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', monospace;
+}
+
+
+

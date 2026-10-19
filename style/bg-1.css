@@ -1,0 +1,159 @@
+.center_text_bg {
+    text-align: center;
+}
+
+.bg_1 {
+    width: 100%;
+    height: 100vh; /* 100% высоты экрана */
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+}
+
+.bg_1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/body/playstation-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* фон фиксируется при скролле (опционально) */
+    filter: blur(4px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+
+.black_back {
+  display: none;
+  background-color: black;
+  height: 60px;
+  color: white;
+}
+
+
+/* Центрируем всё внутри bg_1 */
+.bg_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* вертикальный центр */
+}
+
+.bg_1 h1 {
+    text-align: center;
+    color: white;
+    font-size: clamp(24px, 6vw, 100px);
+    margin-top: 0; /* убираем margin-top, теперь центрирует flexbox */
+    font-family: 'Press Start 2P', monospace;
+    padding: 0 16px;
+    line-height: 1.3;
+}
+
+.btn {
+    padding: clamp(10px, 1.5vw, 20px) clamp(20px, 3vw, 40px);
+    font-size: clamp(16px, 1.5vw, 24px); /* было 50px макс — слишком много */
+    margin-top: clamp(20px, 4vh, 40px);
+    border: none;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 0 #3730a3;
+    width: clamp(200px, 30%, 400px); /* на fullHD 60% было слишком широко */
+    align-self: center;
+    white-space: nowrap;
+    border-radius: 8px; /* опционально */
+}
+
+@media (max-width: 480px) {
+    .bg_1 h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 90%;
+    }
+}
+
+
+/* Дополнительно для очень маленьких экранов */
+@media (max-width: 480px) {
+    .bg_1 h1 {
+        
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 90%;
+    }
+}
+
+/* наведение */
+.btn:hover {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #3730a3;
+}
+
+/* нажатие */
+.btn:active {
+  transform: translateY(6px);
+  box-shadow: 0 0 0 #3730a3;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.chevron-down {
+  position: absolute;
+  margin-bottom: 100px;
+  left: 50%;
+  bottom: 40px;
+
+  width: 28px;
+  height: 28px;
+
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+
+  transform: translateX(-50%) rotate(-45deg);
+  opacity: 0.9;
+
+  animation: chevronMove 1.6s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes chevronMove {
+  0% {
+    transform: translate(-50%, 0) rotate(-45deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-50%, 14px) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 0) rotate(-45deg);
+    opacity: 0.4;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

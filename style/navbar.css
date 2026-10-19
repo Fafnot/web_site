@@ -1,0 +1,41 @@
+
+.navbar {
+    display: -ms-inline-grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+    text-align: center;
+    background-color: black;
+    position: fixed; /* Фиксируем элемент */
+    top: 0;          /* Прижимаем к самому верху */
+    left: 0;         /* Прижимаем к левому краю */
+    width: 100%;     /* Растягиваем на всю ширину */
+    z-index: 1000;   /* Убедитесь, что меню поверх остального контента */
+}
+
+.navbar-text {
+    display: inline-flex;
+}
+
+
+.navbar-text h3 {
+    font-family: 'Press Start 2P', cursive;
+    margin: 10px;
+    transition: transform 0.4s ease;
+}
+
+.navbar-text h3:hover {
+    transform: scale(1.1);
+}
+
+.navbar-text a {
+    color: white; 
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.navbar-text a:hover {
+    color: blue; 
+}
+
+
+

@@ -1,0 +1,56 @@
+.grid {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #DCDCDC;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: clamp(80px, 20vw, 150px); /* адаптивная ширина */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px black;
+}
+
+.card img {
+    width: 100%; /* всегда заполняет карточку */
+    border-radius: 10px;
+}
+
+.timer {
+    font-size: clamp(14px, 3vw, 25px); /* адаптивный шрифт */
+}
+
+
+
+
+@media (max-width: 325px) {
+    .card {
+        width: clamp(60px, 20vw, 150px);
+    }
+
+}
+
+@media (max-width: 290px) {
+    .grid {
+        padding: 10px;
+        gap: 30px;
+    }
+    .card {
+        padding: 10px;
+    }
+
+}
+
+
+

@@ -1,0 +1,40 @@
+
+
+.main-blackground {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.main-blackground h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.main-blackground-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+    padding-bottom: 100px;
+    gap: 30px;
+    padding: 20px 20px 100px 20px;
+}
+
+.main-blackground-2 h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.card-text-1 {
+    background-color: black;
+    text-align: left;
+    width: clamp(280px, 30%, 400px); /* 3 карточки в ряд на ноутбуке */
+    color: white;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+

@@ -1,0 +1,33 @@
+.floating-btn {
+  display: none; /* Скрыта по умолчанию */
+  position: fixed; /* Фиксируем на экране */
+  bottom: 30px;    /* Отступ снизу */
+  right: 30px;     /* Отступ справа */
+  
+  background-color: #E1306C; /* Цвет Instagram (можно поменять) */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;       /* Закругленные края */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  z-index: 9999;             /* Поверх всех элементов */
+  transition: opacity 0.3s, transform 0.3s; /* Плавная анимация */
+}
+
+.floating-btn:hover {
+  background-color: #C13584; /* Цвет при наведении */
+  transform: scale(1.05);    /* Легкое увеличение */
+}
+
+/* Класс для показа кнопки */
+.floating-btn.show {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

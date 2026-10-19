@@ -1,0 +1,30 @@
+.game-ps {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+
+}
+
+.track img{
+    width: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+

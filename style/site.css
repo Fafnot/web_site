@@ -1,0 +1,640 @@
+/* ==========================================================
+   PS Time Kokshe — новый визуальный стиль
+   ВАЖНО: в этом файле нет селекторов .time и .timer.
+   Их стили и разметка остались как были (см. card.css).
+   ========================================================== */
+
+:root {
+    --bg: #07070d;
+    --bg-2: #0d0d18;
+    --surface: #12121f;
+    --surface-2: #1a1a2e;
+    --line: rgba(255, 255, 255, 0.09);
+    --text: #f2f2f8;
+    --muted: #9a9ab3;
+    --accent: #4f46e5;
+    --accent-2: #00a2ff;
+    --accent-3: #e1306c;
+    --glow: 0 0 0 1px rgba(79, 70, 229, 0.5), 0 10px 40px rgba(79, 70, 229, 0.35);
+    --radius: 18px;
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-main: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 72px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+}
+
+/* ---------- Навбар ---------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 clamp(16px, 4vw, 48px);
+    height: 72px;
+    background: rgba(7, 7, 13, 0.94);
+    border-bottom: 1px solid var(--line);
+}
+
+.logo-ps-time-kokshe {
+    background: transparent;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+    font-size: clamp(15px, 2.4vw, 20px);
+    font-weight: 800;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.logo span {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    padding: 8px 9px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    box-shadow: 0 0 18px rgba(79, 70, 229, 0.55);
+}
+
+.navbar-text {
+    display: flex;
+    gap: 6px;
+}
+
+.navbar-text h3 {
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    transition: none;
+}
+
+.navbar-text h3:hover {
+    transform: none;
+}
+
+.navbar-text a {
+    display: block;
+    padding: 10px 16px;
+    border-radius: 999px;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.25s ease, background 0.25s ease;
+}
+
+.navbar-text a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- Hero ---------- */
+.bg_1 {
+    height: calc(100vh - 72px);
+    min-height: 520px;
+    gap: 8px;
+    isolation: isolate;
+}
+
+.bg_1::before {
+    background-image: url("../img/body/hero-bg.webp");
+    background-attachment: scroll;
+    filter: none;
+    transform: none;
+    z-index: -2;
+}
+
+.bg_1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        radial-gradient(60% 50% at 50% 45%, rgba(79, 70, 229, 0.28), transparent 70%),
+        linear-gradient(to bottom, rgba(7, 7, 13, 0.1), var(--bg) 98%);
+}
+
+.bg_1 h1 {
+    max-width: 1100px;
+    font-size: clamp(22px, 4.6vw, 64px);
+    line-height: 1.35;
+    text-shadow: 0 0 30px rgba(79, 70, 229, 0.8), 0 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+    width: auto;
+    min-width: 260px;
+    padding: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.5);
+    font-weight: 700;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn a {
+    display: block;
+    padding: clamp(14px, 1.8vw, 20px) clamp(28px, 4vw, 48px);
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 162, 255, 0.5);
+    filter: brightness(1.08);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 18px rgba(79, 70, 229, 0.5);
+}
+
+/* ---------- Карточки консолей ---------- */
+.center-grid {
+    padding: 80px 16px 20px;
+    background:
+        radial-gradient(50% 60% at 50% 0%, rgba(79, 70, 229, 0.14), transparent 70%),
+        var(--bg);
+}
+
+.grid {
+    margin-top: 0;
+    gap: 22px;
+    padding: 0;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
+.card {
+    width: clamp(150px, 20vw, 230px);
+    padding: 24px 20px 20px;
+    border-radius: var(--radius);
+    background: linear-gradient(160deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--line);
+    color: var(--text);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(79, 70, 229, 0.7);
+    box-shadow: var(--glow);
+}
+
+.card img {
+    border-radius: 12px;
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.6));
+}
+
+/* ---------- Лента игр ---------- */
+.game-ps {
+    margin: 90px 0 60px;
+    position: relative;
+    contain: layout paint;
+}
+
+.game-ps::before,
+.game-ps::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.game-ps::before { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+.game-ps::after { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+
+.track {
+    gap: 22px;
+    will-change: transform;
+}
+
+.track img {
+    width: clamp(260px, 26vw, 380px);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #0d0d18;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- Цены ---------- */
+.pricing-section {
+    background:
+        radial-gradient(50% 40% at 50% 0%, rgba(0, 162, 255, 0.1), transparent 70%),
+        var(--bg-2);
+    padding: 90px 20px;
+}
+
+.pricing-title {
+    margin-bottom: 48px;
+    line-height: 1.5;
+}
+
+.pricing-cards {
+    max-width: 1200px;
+    margin-inline: auto;
+    gap: 22px;
+}
+
+.pricing-card {
+    padding: 38px 24px 30px;
+    border-radius: var(--radius);
+    background: linear-gradient(170deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--line);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(79, 70, 229, 0.7);
+    box-shadow: var(--glow);
+}
+
+.pricing-card.featured {
+    background: linear-gradient(170deg, #25235a, #14142b);
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.pricing-card h3 {
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+}
+
+.price {
+    font-size: clamp(20px, 2.4vw, 28px);
+    background: linear-gradient(135deg, #fff, #a5b4fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing-card ul li {
+    border-bottom-color: var(--line);
+}
+
+.badge {
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.6);
+}
+
+.tv-block {
+    background: var(--surface);
+    border: 1px dashed rgba(255, 255, 255, 0.22);
+}
+
+.tv-block:hover {
+    border-color: var(--accent-2);
+}
+
+.step-num {
+    border: none;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    box-shadow: 0 0 22px rgba(79, 70, 229, 0.55);
+}
+
+/* ---------- SEO-текст ---------- */
+.blackground_text {
+    background: var(--bg);
+    padding: 80px 20px 20px;
+}
+
+.main-blackground,
+.main-blackground-2 {
+    background: transparent;
+    max-width: 1300px;
+    margin-inline: auto;
+    padding: 0 0 30px;
+    gap: 22px;
+    align-items: stretch;
+}
+
+.card-text-1 {
+    background: linear-gradient(170deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    width: clamp(280px, 31%, 410px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-text-1:hover {
+    transform: translateY(-4px);
+    border-color: rgba(79, 70, 229, 0.6);
+}
+
+.card-text-1 h2 {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #c7d2fe;
+}
+
+.card-text-1 h3 {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var(--muted);
+}
+
+.card-text-1 br {
+    display: none;
+}
+
+.card-text-1 h2 + br + h3,
+.card-text-1 h2 {
+    margin-bottom: 14px;
+}
+
+.serch {
+    background: transparent;
+    max-width: 1300px;
+    margin: 10px auto 0;
+    padding: 18px 4px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+}
+
+.serch summary {
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.serch summary:hover {
+    color: #fff;
+}
+
+.serch p {
+    margin-top: 12px;
+    line-height: 1.7;
+}
+
+/* ---------- Футер ---------- */
+.main-footer {
+    margin-top: 0;
+    padding: 60px 20px 40px;
+    gap: clamp(30px, 8vw, 110px);
+    background: var(--bg-2);
+    border-top: 1px solid var(--line);
+    color: var(--text);
+}
+
+.left img {
+    width: 56px;
+    padding: 10px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+
+.left a:nth-child(n) img:hover {
+    transform: translateY(-4px);
+    filter: none;
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+.block_left {
+    gap: 12px;
+    max-width: 260px;
+}
+
+.line {
+    background: linear-gradient(90deg, var(--accent), transparent);
+    height: 2px;
+}
+
+.block_center h2,
+.block_right h2 {
+    min-height: 0;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.center a,
+.right a {
+    color: var(--muted);
+}
+
+.center a:hover,
+.right a:hover {
+    color: #fff;
+}
+
+.center h3,
+.right h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.hidden-footer {
+    background: var(--bg);
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding: 22px 20px;
+    font-size: 13px;
+}
+
+.hidden-footer p {
+    margin: 4px 12px;
+}
+
+/* ---------- Плавающая кнопка ---------- */
+.floating-btn {
+    background: linear-gradient(135deg, var(--accent-3), #c13584);
+    font-family: var(--font-main);
+    box-shadow: 0 10px 28px rgba(225, 48, 108, 0.45);
+}
+
+.floating-btn:hover {
+    background: linear-gradient(135deg, #f04d85, #d6409a);
+}
+
+/* ---------- Внутренние страницы ---------- */
+body > h1 {
+    text-align: center;
+    margin: 60px 16px 0;
+    font-family: var(--font-pixel);
+    font-size: clamp(20px, 4vw, 40px) !important;
+    line-height: 1.4;
+}
+
+/* Страница «О нас»: переворачивающиеся карточки */
+.card-inner {
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.card:hover .card-inner {
+    box-shadow: var(--glow);
+}
+
+.card-front {
+    background: linear-gradient(160deg, var(--surface-2), var(--surface));
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+}
+
+.card-back {
+    background: linear-gradient(160deg, #25235a, #14142b);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+}
+
+.card-back h4 {
+    margin-bottom: 10px;
+    color: #a5b4fc;
+    font-size: 16px;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+    background: var(--accent-2);
+}
+
+.game-list li {
+    text-align: left;
+}
+
+/* ---------- Мобильные ---------- */
+@media (max-width: 640px) {
+    body {
+        padding-top: 64px;
+    }
+
+    .navbar {
+        height: 64px;
+    }
+
+    .navbar-text a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .bg_1 {
+        height: calc(100vh - 64px);
+    }
+
+    .btn {
+        min-width: 0;
+        width: 88%;
+    }
+
+    .card {
+        width: calc(50% - 12px);
+        min-width: 130px;
+        padding: 18px 12px 14px;
+    }
+
+    .track img {
+        width: 250px;
+    }
+
+    .main-footer {
+        gap: 34px;
+    }
+
+    .card-text-1 {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Карточки-перевёртыши (страница «О нас») не должны получать отступы обычных карточек */
+.card:has(.card-inner) {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.card:has(.card-inner):hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Лента игр можно листать рукой (мышь и палец) */
+.game-ps {
+    touch-action: pan-y;          /* вертикально страница листается как обычно, горизонтально — лента */
+    cursor: grab;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.game-ps.dragging { cursor: grabbing; }
+
+.track img {
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+/* Контакты в подвале: номера нажимаются и сразу набираются */
+.block_center a[href^="tel:"] {
+    display: block;
+}
+
+.block_center a[href^="tel:"] h3 {
+    padding: 4px 0;
+    letter-spacing: 0.01em;
+}
+
+.contact-note {
+    margin: 14px 0 2px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+/* Статус карточки, которая занята всегда (24/7) */
+.card-status {
+    font-size: clamp(14px, 3vw, 25px);
+}
+
+.card-status--busy {
+    color: #ff8a8a;
+    font-weight: 600;
+}

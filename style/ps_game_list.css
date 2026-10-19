@@ -1,0 +1,96 @@
+/* Добавляем перспективу сетке, чтобы переворот выглядел объемным */
+.grid {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    perspective: 1000px; /* Важно для 3D эффекта */
+}
+
+.card {
+    background-color: transparent; /* Убираем фон у контейнера */
+    border-radius: 20px;
+    width: clamp(80px, 20vw, 150px);
+    aspect-ratio: 3 / 4; /* Фиксируем пропорции, чтобы карточка не схлопывалась */
+    position: relative;
+    transform-style: preserve-3d; /* Разрешаем 3D для детей */
+    cursor: pointer;
+}
+
+/* Внутренняя обертка, которая будет вращаться */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* Эффект при наведении - поворот */
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+    box-shadow: 0 0 20px black;
+}
+
+/* Общие стили для передней и задней стороны */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Скрываем заднюю часть элемента */
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Стили для ЛИЦЕВОЙ стороны (твой текущий дизайн) */
+.card-front {
+    background-color: #DCDCDC;
+    color: black;
+}
+
+.card-front img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Стили для ОБРАТНОЙ стороны (список игр) */
+.card-back {
+    background-color: #2c3e50; /* Темный фон для игр */
+    color: white;
+    transform: rotateY(180deg); /* Изначально повернута */
+    overflow-y: auto; /* Прокрутка, если игр много */
+}
+
+/* Стили для списка игр */
+.game-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 12px; /* Чуть меньше шрифт для списка */
+}
+
+.game-list li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 2px;
+}
+
+/* Твои старые стили для таймера (оставляем как есть) */
+.timer {
+    font-size: clamp(14px, 3vw, 25px);
+    font-weight: bold;
+}

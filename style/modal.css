@@ -1,0 +1,231 @@
+/* Окно «Игры на приставке». Классы gm-*, селекторов .time/.timer здесь нет. */
+.card[data-console] { cursor: pointer; }
+.card[data-console]:focus-visible { outline: 3px solid #00a2ff; outline-offset: 4px; }
+
+.grid-hint {
+    text-align: center;
+    color: #9a9ab3;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+body.gm-open { overflow: hidden; }
+
+.gm[hidden] { display: none; }
+
+.gm {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    animation: gmFade 0.2s ease;
+}
+
+.gm-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 3, 8, 0.78);
+}
+
+.gm-dialog {
+    position: relative;
+    width: min(680px, 100%);
+    max-height: min(88vh, 760px);
+    overflow-y: auto;
+    padding: 26px 24px 24px;
+    border-radius: 22px;
+    background: linear-gradient(170deg, #1d1d36, #111120);
+    border: 1px solid rgba(79, 70, 229, 0.55);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(79, 70, 229, 0.25);
+    color: #f2f2f8;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    animation: gmPop 0.25s ease;
+}
+
+.gm-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.gm-close:hover { background: rgba(255, 255, 255, 0.18); }
+
+.gm-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-right: 40px;
+}
+
+.gm-console {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    padding: 8px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.gm-head h3 { font-size: clamp(18px, 3vw, 24px); margin-bottom: 6px; }
+
+.gm-status { font-size: 13px; font-weight: 600; }
+.gm-status.free { color: #4ade80; }
+.gm-status.busy { color: #fbbf24; }
+
+.gm-count { margin: 18px 0 12px; color: #9a9ab3; font-size: 14px; }
+
+.gm-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.gm-game {
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gm-game img,
+.gm-ph {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.gm-ph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    background: linear-gradient(135deg, #25235a, #14142b);
+}
+
+.gm-game span {
+    display: block;
+    padding: 9px 10px 11px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.gm-order {
+    display: block;
+    margin-top: 20px;
+    padding: 14px 20px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #4f46e5, #00a2ff);
+    box-shadow: 0 10px 26px rgba(79, 70, 229, 0.45);
+    transition: transform 0.2s ease;
+}
+
+.gm-order:hover { transform: translateY(-2px); }
+
+@keyframes gmFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes gmPop { from { opacity: 0; transform: translateY(16px) scale(0.97); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 480px) {
+    .gm-dialog { padding: 20px 14px 16px; }
+    .gm-list { grid-template-columns: repeat(2, 1fr); }
+    .gm-console { width: 64px; height: 64px; }
+}
+
+/* ---------- Окно «Куда написать?» (om-*) ---------- */
+body.om-open { overflow: hidden; }
+
+.om[hidden] { display: none; }
+
+.om {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;               /* выше плавающей кнопки и окна с играми */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    animation: gmFade 0.2s ease;
+}
+
+.om-backdrop { position: absolute; inset: 0; background: rgba(3, 3, 8, 0.8); }
+
+.om-dialog {
+    position: relative;
+    width: min(420px, 100%);
+    padding: 30px 24px 24px;
+    border-radius: 22px;
+    background: linear-gradient(170deg, #1d1d36, #111120);
+    border: 1px solid rgba(79, 70, 229, 0.55);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(79, 70, 229, 0.25);
+    color: #f2f2f8;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    animation: gmPop 0.25s ease;
+}
+
+.om-dialog h3 { font-size: clamp(20px, 4vw, 24px); margin-bottom: 8px; }
+.om-sub { color: #9a9ab3; font-size: 14px; line-height: 1.5; margin-bottom: 22px; }
+
+.om-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    width: 38px;
+    height: 38px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.om-close:hover { background: rgba(255, 255, 255, 0.18); }
+
+.om-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.om-btn:hover { transform: translateY(-2px); filter: brightness(1.08); }
+
+.om-btn img {
+    width: 38px;
+    height: 38px;
+    flex: none;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.om-btn b { display: block; font-size: 17px; }
+.om-btn small { display: block; margin-top: 2px; font-size: 13px; opacity: 0.85; }
+
+.om-wa { background: linear-gradient(135deg, #25d366, #128c7e); box-shadow: 0 10px 24px rgba(37, 211, 102, 0.3); }
+.om-ig { background: linear-gradient(135deg, #f58529, #dd2a7b 50%, #8134af); box-shadow: 0 10px 24px rgba(221, 42, 123, 0.3); }
