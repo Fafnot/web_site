@@ -4,16 +4,8 @@ window.PHOTOS = [
     "src": "verloren_img/23331209.jpg"
   },
   {
-    "name": "13583237.jpg",
-    "src": "verloren_img/13583237.jpg"
-  },
-  {
     "name": "21987535.jpg",
     "src": "verloren_img/21987535.jpg"
-  },
-  {
-    "name": "IMG-20261012-WA0079.jpg",
-    "src": "verloren_img/IMG-20261012-WA0079.jpg"
   },
   {
     "name": "46011949.jpg",
@@ -134,10 +126,6 @@ window.PHOTOS = [
   {
     "name": "15299834.jpg",
     "src": "verloren_img/15299834.jpg"
-  },
-  {
-    "name": "anime-cielo-shinkai.jpg",
-    "src": "verloren_img/anime-cielo-shinkai.jpg"
   },
   {
     "name": "16821932.jpg",
