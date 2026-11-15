@@ -1,5 +1,17 @@
 window.PHOTOS = [
   {
+    "name": "23331209.jpg",
+    "src": "verloren_img/23331209.jpg"
+  },
+  {
+    "name": "13583237.jpg",
+    "src": "verloren_img/13583237.jpg"
+  },
+  {
+    "name": "21987535.jpg",
+    "src": "verloren_img/21987535.jpg"
+  },
+  {
     "name": "IMG-20261012-WA0079.jpg",
     "src": "verloren_img/IMG-20261012-WA0079.jpg"
   },
@@ -8,56 +20,116 @@ window.PHOTOS = [
     "src": "verloren_img/1_Tribal_Ver_1.jpg"
   },
   {
+    "name": "46011949.jpg",
+    "src": "verloren_img/46011949.jpg"
+  },
+  {
     "name": "1_Tribal_Ver_2.jpg",
     "src": "verloren_img/1_Tribal_Ver_2.jpg"
+  },
+  {
+    "name": "21078170.jpg",
+    "src": "verloren_img/21078170.jpg"
   },
   {
     "name": "1_Tribal_Ver_3.jpg",
     "src": "verloren_img/1_Tribal_Ver_3.jpg"
   },
   {
+    "name": "23278273.jpg",
+    "src": "verloren_img/23278273.jpg"
+  },
+  {
+    "name": "19750155.jpg",
+    "src": "verloren_img/19750155.jpg"
+  },
+  {
     "name": "1_Tribal_Ver_4.jpg",
     "src": "verloren_img/1_Tribal_Ver_4.jpg"
+  },
+  {
+    "name": "25902952.png",
+    "src": "verloren_img/25902952.png"
   },
   {
     "name": "Jane_Doe_Un.png",
     "src": "verloren_img/Jane_Doe_Un.png"
   },
   {
+    "name": "55962825.jpg",
+    "src": "verloren_img/55962825.jpg"
+  },
+  {
     "name": "image.jpg",
     "src": "verloren_img/image.jpg"
+  },
+  {
+    "name": "98415627.png",
+    "src": "verloren_img/98415627.png"
   },
   {
     "name": "The_freedom_of_arch_1.png",
     "src": "verloren_img/The_freedom_of_arch_1.png"
   },
   {
+    "name": "21925202.png",
+    "src": "verloren_img/21925202.png"
+  },
+  {
     "name": "wallhaven-1qodm3_1920x1080.png",
     "src": "verloren_img/wallhaven-1qodm3_1920x1080.png"
+  },
+  {
+    "name": "14207157.png",
+    "src": "verloren_img/14207157.png"
   },
   {
     "name": "wallhaven-d8vv9o_1920x1080.png",
     "src": "verloren_img/wallhaven-d8vv9o_1920x1080.png"
   },
   {
+    "name": "58842294.png",
+    "src": "verloren_img/58842294.png"
+  },
+  {
     "name": "wallhaven-6lo5kx_1920x1080.png",
     "src": "verloren_img/wallhaven-6lo5kx_1920x1080.png"
+  },
+  {
+    "name": "22302234.png",
+    "src": "verloren_img/22302234.png"
   },
   {
     "name": "wallhaven-rqyqkj_1920x1080.png",
     "src": "verloren_img/wallhaven-rqyqkj_1920x1080.png"
   },
   {
+    "name": "76627076.jpg",
+    "src": "verloren_img/76627076.jpg"
+  },
+  {
     "name": "forest.jpg",
     "src": "verloren_img/forest.jpg"
+  },
+  {
+    "name": "70422189.jpg",
+    "src": "verloren_img/70422189.jpg"
   },
   {
     "name": "sekiro.jpg",
     "src": "verloren_img/sekiro.jpg"
   },
   {
+    "name": "14357630.png",
+    "src": "verloren_img/14357630.png"
+  },
+  {
     "name": "samurai_bebop.png",
     "src": "verloren_img/samurai_bebop.png"
+  },
+  {
+    "name": "94998130.jpg",
+    "src": "verloren_img/94998130.jpg"
   },
   {
     "name": "wallpaperflare.com_wallpaper_16.jpg",
@@ -72,20 +144,40 @@ window.PHOTOS = [
     "src": "verloren_img/kirokaze-6.gif"
   },
   {
+    "name": "30383208.jpg",
+    "src": "verloren_img/30383208.jpg"
+  },
+  {
     "name": "poster-1280.webp",
     "src": "verloren_img/poster-1280.webp"
+  },
+  {
+    "name": "11718216.jpg",
+    "src": "verloren_img/11718216.jpg"
   },
   {
     "name": "EIwX2v3VAAEvCpW.jpg",
     "src": "verloren_img/EIwX2v3VAAEvCpW.jpg"
   },
   {
+    "name": "13017298.jpg",
+    "src": "verloren_img/13017298.jpg"
+  },
+  {
     "name": "FUo-2O-UcAALsHS.jpg",
     "src": "verloren_img/FUo-2O-UcAALsHS.jpg"
   },
   {
+    "name": "28172248.jpg",
+    "src": "verloren_img/28172248.jpg"
+  },
+  {
     "name": "porsche-911-turbo-3840x2160-13654.jpg",
     "src": "verloren_img/porsche-911-turbo-3840x2160-13654.jpg"
+  },
+  {
+    "name": "29293170.png",
+    "src": "verloren_img/29293170.png"
   },
   {
     "name": "Konachan.com_-_380948_black_hair_boots_building_city_drink_food_fruit_green_eyes_leaves_long_hair_mousegirl_reoen_rooftop_scenic_shorts_sky_stars_stockings_sunset_tail.png",
@@ -104,8 +196,16 @@ window.PHOTOS = [
     "src": "verloren_img/2825710.gif"
   },
   {
+    "name": "31047126.png",
+    "src": "verloren_img/31047126.png"
+  },
+  {
     "name": "wallhaven-p2k1m9_1920x1080.png",
     "src": "verloren_img/wallhaven-p2k1m9_1920x1080.png"
+  },
+  {
+    "name": "29637385.png",
+    "src": "verloren_img/29637385.png"
   },
   {
     "name": "wallhaven-xekg7z_1680x1050.png",
@@ -116,124 +216,252 @@ window.PHOTOS = [
     "src": "verloren_img/1356922.png"
   },
   {
+    "name": "19339104.png",
+    "src": "verloren_img/19339104.png"
+  },
+  {
+    "name": "15299834.jpg",
+    "src": "verloren_img/15299834.jpg"
+  },
+  {
     "name": "anime-cielo-shinkai.jpg",
     "src": "verloren_img/anime-cielo-shinkai.jpg"
+  },
+  {
+    "name": "16821932.jpg",
+    "src": "verloren_img/16821932.jpg"
   },
   {
     "name": "wallhaven-4xo32l.jpg",
     "src": "verloren_img/wallhaven-4xo32l.jpg"
   },
   {
+    "name": "29227255.png",
+    "src": "verloren_img/29227255.png"
+  },
+  {
     "name": "wallhaven-6ode96.png",
     "src": "verloren_img/wallhaven-6ode96.png"
+  },
+  {
+    "name": "13912207.jpg",
+    "src": "verloren_img/13912207.jpg"
   },
   {
     "name": "wallhaven-gpmg53.jpg",
     "src": "verloren_img/wallhaven-gpmg53.jpg"
   },
   {
+    "name": "15554140.png",
+    "src": "verloren_img/15554140.png"
+  },
+  {
     "name": "wallhaven-6d8wgq.png",
     "src": "verloren_img/wallhaven-6d8wgq.png"
+  },
+  {
+    "name": "28444206.jpg",
+    "src": "verloren_img/28444206.jpg"
   },
   {
     "name": "wallhaven-3z6ped.jpg",
     "src": "verloren_img/wallhaven-3z6ped.jpg"
   },
   {
+    "name": "33851587.jpg",
+    "src": "verloren_img/33851587.jpg"
+  },
+  {
     "name": "wallhaven-1kewy3.jpg",
     "src": "verloren_img/wallhaven-1kewy3.jpg"
+  },
+  {
+    "name": "22353716.jpg",
+    "src": "verloren_img/22353716.jpg"
   },
   {
     "name": "piqsels.com-id-zqxcl_1.jpg",
     "src": "verloren_img/piqsels.com-id-zqxcl_1.jpg"
   },
   {
+    "name": "22708254.jpg",
+    "src": "verloren_img/22708254.jpg"
+  },
+  {
     "name": "DBB5758C-DEE2-483A-BE00-23B28562DA6B.jpg",
     "src": "verloren_img/DBB5758C-DEE2-483A-BE00-23B28562DA6B.jpg"
+  },
+  {
+    "name": "87132020.jpg",
+    "src": "verloren_img/87132020.jpg"
   },
   {
     "name": "BC9447F5-6061-49D3-BA73-2D4401033AB3.jpg",
     "src": "verloren_img/BC9447F5-6061-49D3-BA73-2D4401033AB3.jpg"
   },
   {
+    "name": "13834115.jpg",
+    "src": "verloren_img/13834115.jpg"
+  },
+  {
     "name": "57842D27-D7CA-4868-8B82-AFCA7187240D.jpg",
     "src": "verloren_img/57842D27-D7CA-4868-8B82-AFCA7187240D.jpg"
+  },
+  {
+    "name": "26803614.jpg",
+    "src": "verloren_img/26803614.jpg"
   },
   {
     "name": "a_city_skyline_seen_through_a_window.jpg",
     "src": "verloren_img/a_city_skyline_seen_through_a_window.jpg"
   },
   {
+    "name": "20842120.jpg",
+    "src": "verloren_img/20842120.jpg"
+  },
+  {
     "name": "a_mountain_with_clouds_in_the_sky.jpg",
     "src": "verloren_img/a_mountain_with_clouds_in_the_sky.jpg"
+  },
+  {
+    "name": "25090858.jpg",
+    "src": "verloren_img/25090858.jpg"
   },
   {
     "name": "a_street_lights_at_night_01.jpg",
     "src": "verloren_img/a_street_lights_at_night_01.jpg"
   },
   {
+    "name": "10288527.jpg",
+    "src": "verloren_img/10288527.jpg"
+  },
+  {
     "name": "car-girl-white.jpg",
     "src": "verloren_img/car-girl-white.jpg"
+  },
+  {
+    "name": "20886546.png",
+    "src": "verloren_img/20886546.png"
   },
   {
     "name": "death-life.png",
     "src": "verloren_img/death-life.png"
   },
   {
+    "name": "29648206.jpg",
+    "src": "verloren_img/29648206.jpg"
+  },
+  {
     "name": "default.jpg",
     "src": "verloren_img/default.jpg"
+  },
+  {
+    "name": "23795777.jpg",
+    "src": "verloren_img/23795777.jpg"
   },
   {
     "name": "gothic-elegance-anime-aesthetic-backiee-4K.jpg",
     "src": "verloren_img/gothic-elegance-anime-aesthetic-backiee-4K.jpg"
   },
   {
+    "name": "13721251.jpg",
+    "src": "verloren_img/13721251.jpg"
+  },
+  {
     "name": "monochrome-anime-eyes-emerging-from-the-dark-backiee-HD.jpg",
     "src": "verloren_img/monochrome-anime-eyes-emerging-from-the-dark-backiee-HD.jpg"
+  },
+  {
+    "name": "7193175.jpg",
+    "src": "verloren_img/7193175.jpg"
   },
   {
     "name": "wp12033065-monochrome-4k-wallpapers.jpg",
     "src": "verloren_img/wp12033065-monochrome-4k-wallpapers.jpg"
   },
   {
+    "name": "30993314.jpg",
+    "src": "verloren_img/30993314.jpg"
+  },
+  {
     "name": "623D1A90-E13A-4F62-8D78-410342F794A1.jpg",
     "src": "verloren_img/623D1A90-E13A-4F62-8D78-410342F794A1.jpg"
+  },
+  {
+    "name": "20471731.jpg",
+    "src": "verloren_img/20471731.jpg"
   },
   {
     "name": "6CC4EA14-EC8F-4382-A576-F381FABC8D12.jpg",
     "src": "verloren_img/6CC4EA14-EC8F-4382-A576-F381FABC8D12.jpg"
   },
   {
+    "name": "29881111.jpg",
+    "src": "verloren_img/29881111.jpg"
+  },
+  {
     "name": "7E03C985-5F02-4961-80B9-6D47DC570091.jpg",
     "src": "verloren_img/7E03C985-5F02-4961-80B9-6D47DC570091.jpg"
+  },
+  {
+    "name": "88361337.jpg",
+    "src": "verloren_img/88361337.jpg"
   },
   {
     "name": "wallhaven-5ypy88.jpg",
     "src": "verloren_img/wallhaven-5ypy88.jpg"
   },
   {
+    "name": "10294960.png",
+    "src": "verloren_img/10294960.png"
+  },
+  {
     "name": "wallhaven-5y6lm8.png",
     "src": "verloren_img/wallhaven-5y6lm8.png"
+  },
+  {
+    "name": "23236128.jpg",
+    "src": "verloren_img/23236128.jpg"
   },
   {
     "name": "wallhaven-5y67m3.jpg",
     "src": "verloren_img/wallhaven-5y67m3.jpg"
   },
   {
+    "name": "5708559.png",
+    "src": "verloren_img/5708559.png"
+  },
+  {
     "name": "wp15117460-ultrakill-desktop-wallpapers.png",
     "src": "verloren_img/wp15117460-ultrakill-desktop-wallpapers.png"
+  },
+  {
+    "name": "29682824.jpg",
+    "src": "verloren_img/29682824.jpg"
   },
   {
     "name": "wallhaven-xe85j3.jpg",
     "src": "verloren_img/wallhaven-xe85j3.jpg"
   },
   {
+    "name": "17672229.jpg",
+    "src": "verloren_img/17672229.jpg"
+  },
+  {
     "name": "wallhaven-gpgyw3.jpg",
     "src": "verloren_img/wallhaven-gpgyw3.jpg"
   },
   {
+    "name": "81749930.png",
+    "src": "verloren_img/81749930.png"
+  },
+  {
     "name": "wallhaven-5yy188_1680x1050.png",
     "src": "verloren_img/wallhaven-5yy188_1680x1050.png"
+  },
+  {
+    "name": "63071316.png",
+    "src": "verloren_img/63071316.png"
   },
   {
     "name": "default_wallpaper.png",
@@ -244,6 +472,14 @@ window.PHOTOS = [
     "src": "verloren_img/141830-art-fialka-sablya-svet-anime-1920x1080.jpg"
   },
   {
+    "name": "75175644.jpg",
+    "src": "verloren_img/75175644.jpg"
+  },
+  {
+    "name": "18009232.jpg",
+    "src": "verloren_img/18009232.jpg"
+  },
+  {
     "name": "39685-teatralnye_dekoracii-oblako-anime-otrazhenie-solnechnyj_svet-1920x1080.jpg",
     "src": "verloren_img/39685-teatralnye_dekoracii-oblako-anime-otrazhenie-solnechnyj_svet-1920x1080.jpg"
   },
@@ -252,12 +488,28 @@ window.PHOTOS = [
     "src": "verloren_img/1340411.jpeg"
   },
   {
+    "name": "25731333.jpeg",
+    "src": "verloren_img/25731333.jpeg"
+  },
+  {
+    "name": "30135237.jpg",
+    "src": "verloren_img/30135237.jpg"
+  },
+  {
     "name": "cT6EVd.jpg",
     "src": "verloren_img/cT6EVd.jpg"
   },
   {
     "name": "1345576.jpeg",
     "src": "verloren_img/1345576.jpeg"
+  },
+  {
+    "name": "27963374.jpeg",
+    "src": "verloren_img/27963374.jpeg"
+  },
+  {
+    "name": "59671605.jpg",
+    "src": "verloren_img/59671605.jpg"
   },
   {
     "name": "hd-anime-super-saiyan-goku-9vnxw0s6l70fb9l2.jpg",
