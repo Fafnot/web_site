@@ -1,5 +1,185 @@
 window.PHOTOS = [
   {
+    "name": "32282148.png",
+    "src": "verloren_img/32282148.png"
+  },
+  {
+    "name": "17536951.jpg",
+    "src": "verloren_img/17536951.jpg"
+  },
+  {
+    "name": "18882251.jpg",
+    "src": "verloren_img/18882251.jpg"
+  },
+  {
+    "name": "27425158.jpg",
+    "src": "verloren_img/27425158.jpg"
+  },
+  {
+    "name": "27541297.jpg",
+    "src": "verloren_img/27541297.jpg"
+  },
+  {
+    "name": "98282941.jpg",
+    "src": "verloren_img/98282941.jpg"
+  },
+  {
+    "name": "26276288.jpg",
+    "src": "verloren_img/26276288.jpg"
+  },
+  {
+    "name": "30905138.png",
+    "src": "verloren_img/30905138.png"
+  },
+  {
+    "name": "27359171.jpg",
+    "src": "verloren_img/27359171.jpg"
+  },
+  {
+    "name": "31943958.jpg",
+    "src": "verloren_img/31943958.jpg"
+  },
+  {
+    "name": "42978337.jpg",
+    "src": "verloren_img/42978337.jpg"
+  },
+  {
+    "name": "14758308.jpg",
+    "src": "verloren_img/14758308.jpg"
+  },
+  {
+    "name": "17859317.png",
+    "src": "verloren_img/17859317.png"
+  },
+  {
+    "name": "39082953.png",
+    "src": "verloren_img/39082953.png"
+  },
+  {
+    "name": "28225495.png",
+    "src": "verloren_img/28225495.png"
+  },
+  {
+    "name": "60021467.jpg",
+    "src": "verloren_img/60021467.jpg"
+  },
+  {
+    "name": "24349182.png",
+    "src": "verloren_img/24349182.png"
+  },
+  {
+    "name": "16457106.jpg",
+    "src": "verloren_img/16457106.jpg"
+  },
+  {
+    "name": "19335285.jpg",
+    "src": "verloren_img/19335285.jpg"
+  },
+  {
+    "name": "75532610.jpg",
+    "src": "verloren_img/75532610.jpg"
+  },
+  {
+    "name": "17133182.jpg",
+    "src": "verloren_img/17133182.jpg"
+  },
+  {
+    "name": "69931534.jpg",
+    "src": "verloren_img/69931534.jpg"
+  },
+  {
+    "name": "19311597.jpg",
+    "src": "verloren_img/19311597.jpg"
+  },
+  {
+    "name": "71772344.jpg",
+    "src": "verloren_img/71772344.jpg"
+  },
+  {
+    "name": "17265340.jpg",
+    "src": "verloren_img/17265340.jpg"
+  },
+  {
+    "name": "24442525.png",
+    "src": "verloren_img/24442525.png"
+  },
+  {
+    "name": "17123306.jpg",
+    "src": "verloren_img/17123306.jpg"
+  },
+  {
+    "name": "28841244.png",
+    "src": "verloren_img/28841244.png"
+  },
+  {
+    "name": "27057278.jpg",
+    "src": "verloren_img/27057278.jpg"
+  },
+  {
+    "name": "29521133.jpg",
+    "src": "verloren_img/29521133.jpg"
+  },
+  {
+    "name": "20110309.jpeg",
+    "src": "verloren_img/20110309.jpeg"
+  },
+  {
+    "name": "31269251.jpg",
+    "src": "verloren_img/31269251.jpg"
+  },
+  {
+    "name": "13347266.jpg",
+    "src": "verloren_img/13347266.jpg"
+  },
+  {
+    "name": "19063773.jpg",
+    "src": "verloren_img/19063773.jpg"
+  },
+  {
+    "name": "20692301.png",
+    "src": "verloren_img/20692301.png"
+  },
+  {
+    "name": "12061191.jpg",
+    "src": "verloren_img/12061191.jpg"
+  },
+  {
+    "name": "19540552.jpg",
+    "src": "verloren_img/19540552.jpg"
+  },
+  {
+    "name": "8263763.jpg",
+    "src": "verloren_img/8263763.jpg"
+  },
+  {
+    "name": "82316569.png",
+    "src": "verloren_img/82316569.png"
+  },
+  {
+    "name": "16052151.jpg",
+    "src": "verloren_img/16052151.jpg"
+  },
+  {
+    "name": "83783252.jpg",
+    "src": "verloren_img/83783252.jpg"
+  },
+  {
+    "name": "23290244.jpg",
+    "src": "verloren_img/23290244.jpg"
+  },
+  {
+    "name": "10423759.jpeg",
+    "src": "verloren_img/10423759.jpeg"
+  },
+  {
+    "name": "15195177.jpg",
+    "src": "verloren_img/15195177.jpg"
+  },
+  {
+    "name": "14806106.jpg",
+    "src": "verloren_img/14806106.jpg"
+  },
+  {
     "name": "23331209.jpg",
     "src": "verloren_img/23331209.jpg"
   },
