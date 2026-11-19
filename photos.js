@@ -1,5 +1,69 @@
 window.PHOTOS = [
   {
+    "name": "840909.png",
+    "src": "verloren_img/840909.png"
+  },
+  {
+    "name": "549449.jpg",
+    "src": "verloren_img/549449.jpg"
+  },
+  {
+    "name": "333234.jpg",
+    "src": "verloren_img/333234.jpg"
+  },
+  {
+    "name": "1223602.jpg",
+    "src": "verloren_img/1223602.jpg"
+  },
+  {
+    "name": "990526.jpg",
+    "src": "verloren_img/990526.jpg"
+  },
+  {
+    "name": "700128.jpg",
+    "src": "verloren_img/700128.jpg"
+  },
+  {
+    "name": "1383003.png",
+    "src": "verloren_img/1383003.png"
+  },
+  {
+    "name": "1271120.jpg",
+    "src": "verloren_img/1271120.jpg"
+  },
+  {
+    "name": "1281070.jpg",
+    "src": "verloren_img/1281070.jpg"
+  },
+  {
+    "name": "805639.jpg",
+    "src": "verloren_img/805639.jpg"
+  },
+  {
+    "name": "1386310.png",
+    "src": "verloren_img/1386310.png"
+  },
+  {
+    "name": "1351555.png",
+    "src": "verloren_img/1351555.png"
+  },
+  {
+    "name": "1346774.png",
+    "src": "verloren_img/1346774.png"
+  },
+  {
+    "name": "1392992.png",
+    "src": "verloren_img/1392992.png"
+  },
+  {
+    "name": "thumb-1920-1349943.png",
+    "src": "verloren_img/thumb-1920-1349943.png"
+  },
+  {
+    "name": "jack-anstey-XVoyX7l9ocY-unsplashsafhsfhg.jpg",
+    "src": "verloren_img/jack-anstey-XVoyX7l9ocY-unsplashsafhsfhg.jpg"
+  },
+  {
     "name": "46441237.png",
     "src": "verloren_img/46441237.png"
   },
